@@ -5,7 +5,7 @@ function App() {
   const links = [
     { to: '/home', label: 'Home' },
     { to: '/list', label: 'List' },
-    //  { to: '/about', label: 'About' },
+    { to: '/about', label: 'About' },
   ]
 
   return (
