@@ -1,5 +1,5 @@
 import { Link, Outlet } from 'react-router-dom'
-import './index.css' // Ensure styles are applied
+import './index.css' // Ensure styles are applied 
 
 function App() {
   const links = [
@@ -20,8 +20,12 @@ function App() {
           ))}
         </nav>
       </aside>
-      <main className="app-content"><Outlet /></main>
-      <footer className="app-footer">...</footer>
+      <main className="app-content">
+
+        <Outlet />
+
+      </main>
+      <footer className="app-footer">Footer</footer>
     </div>
   )
 }

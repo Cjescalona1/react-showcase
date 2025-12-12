@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import About from './components/about.tsx'
+import List from './components/list.tsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/list',
-        element: <h1>List</h1>,
+        Component: List
       },
     ]
   },

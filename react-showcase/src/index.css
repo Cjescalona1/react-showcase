@@ -52,7 +52,7 @@ body {
   padding: 0 1.5rem;
   font-weight: 600;
   font-size: 1.25rem;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .app-sidebar {
@@ -79,7 +79,7 @@ body {
 }
 
 .app-sidebar a:hover {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .app-content {
@@ -109,7 +109,17 @@ body {
       "content"
       "footer";
   }
+
   .app-sidebar {
-    display: none; /* simple hidden for mobile as requested "simple" */
+    display: none;
+    /* simple hidden for mobile as requested "simple" */
   }
+}
+
+/* Loading Spinner */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12rem;
 }
