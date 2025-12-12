@@ -6,13 +6,13 @@ function About() {
             <header className="app-header">React Showcase</header>
             <aside className="app-sidebar">
                 <nav>
-                    <Link to="/">
+                    <Link to="/home">
                         Home
                     </Link>
                 </nav>
             </aside>
             <main className="app-content">
-                <Link rel="stylesheet" to="/">
+                <Link rel="stylesheet" to="/home">
                     go back home...
                 </Link>
             </main>

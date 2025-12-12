@@ -7,6 +7,7 @@ function ListData() {
     const [next, setNext] = useState(1);
     const [data, setData] = useState({ results: [] });
 
+
     useEffect(() => {
         const URL = "https://randomuser.me/api/?results=5";
         getData(setData, URL);

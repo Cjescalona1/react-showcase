@@ -5,6 +5,7 @@ function App() {
   const links = [
     { to: '/home', label: 'Home' },
     { to: '/list', label: 'List' },
+    { to: '/hoc', label: 'HOC' },
     { to: '/about', label: 'About' },
   ]
 
