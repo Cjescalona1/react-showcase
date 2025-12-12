@@ -6,8 +6,11 @@ function About() {
     return (
         <div className="app-container">
             <Header />
-            <Sidebar links={[{ to: '/Home', label: 'Home' }]} />
+            <Sidebar links={[{ to: '/', label: 'Home' }]} />
             <main className="app-content">
+
+                <h1>About</h1>
+                <p>this application is a little repository of basic features of react for practical purposes </p>
                 <Link rel="stylesheet" to="/">
                     go back home...
                 </Link>

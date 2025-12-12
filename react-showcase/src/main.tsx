@@ -6,7 +6,7 @@ import About from './components/about.tsx'
 import List from './components/list.tsx'
 import Home from './components/home.tsx'
 import HOC from './components/hoc.tsx'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter, Link } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '/home',
+        index: true,
         Component: Home,
       },
       {
@@ -24,7 +24,11 @@ const router = createBrowserRouter([
       {
         path: '/hoc',
         Component: HOC
-      }
+      },
+      {
+        path: "*",
+        element: <>Page not found 404 <br /> <Link to={"/"}>go back home</Link>  </>,
+      },
     ]
 
   },
