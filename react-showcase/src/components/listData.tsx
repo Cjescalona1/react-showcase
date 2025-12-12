@@ -9,8 +9,13 @@ function ListData() {
 
 
     useEffect(() => {
+        const abortController = new AbortController();
         const URL = "https://randomuser.me/api/?results=5";
-        getData(setData, URL);
+        getData(setData, URL, abortController.signal);
+
+        return () => {
+            abortController.abort(); // Cancel the request if component unmounts or next changes
+        };
     }, [next]);
 
     return (

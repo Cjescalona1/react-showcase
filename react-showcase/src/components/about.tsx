@@ -1,22 +1,18 @@
 import { Link } from "react-router-dom"
+import { Header, Footer, Sidebar } from "./partials/partialComponents.tsx"
+
 function About() {
 
     return (
         <div className="app-container">
-            <header className="app-header">React Showcase</header>
-            <aside className="app-sidebar">
-                <nav>
-                    <Link to="/home">
-                        Home
-                    </Link>
-                </nav>
-            </aside>
+            <Header />
+            <Sidebar links={[{ to: '/Home', label: 'Home' }]} />
             <main className="app-content">
-                <Link rel="stylesheet" to="/home">
+                <Link rel="stylesheet" to="/">
                     go back home...
                 </Link>
             </main>
-            <footer className="app-footer">...</footer>
+            <Footer />
         </div>
     )
 }

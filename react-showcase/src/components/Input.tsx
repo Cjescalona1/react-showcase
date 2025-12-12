@@ -1,5 +1,5 @@
 function InputText(props: any) {
-    const { name, setter, type, ...rest } = props
+    const { name, setter, type } = props
 
     return (
         <>

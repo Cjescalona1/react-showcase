@@ -1,6 +1,6 @@
-async function getData(setter: any, url: string) {
+async function getData(setter: any, url: string, signal?: AbortSignal) {
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, { signal });
         if (!response.ok) {
             throw new Error(`Response status: ${response.status}`);
         }
@@ -8,7 +8,11 @@ async function getData(setter: any, url: string) {
         await setter(result);
 
     } catch (error: any) {
-        console.error(error.message);
+        if (error.name === 'AbortError') {
+            console.log('Fetch aborted');
+        } else {
+            console.error(error.message);
+        }
     }
 }
 export default getData;
