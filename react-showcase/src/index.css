@@ -123,3 +123,18 @@ body {
   align-items: center;
   font-size: 12rem;
 }
+
+.inline {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.twoSections {
+  display: flex;
+  flex-direction: row;
+}
+
+.twoSections section {
+  width: 50%;
+}

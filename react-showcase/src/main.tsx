@@ -6,6 +6,7 @@ import About from './components/about.tsx'
 import List from './components/list.tsx'
 import Home from './components/home.tsx'
 import HOC from './components/hoc.tsx'
+import Memo from './components/memo.tsx'
 import { RouterProvider, createBrowserRouter, Link } from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: '/hoc',
         Component: HOC
+      },
+      {
+        path: '/memo',
+        Component: Memo
       },
       {
         path: "*",

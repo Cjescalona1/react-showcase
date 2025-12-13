@@ -7,6 +7,7 @@ function App() {
     { to: '/list', label: 'List' },
     { to: '/hoc', label: 'HOC' },
     { to: '/about', label: 'About' },
+    { to: '/memo', label: 'Memo' },
   ]
 
   return (

@@ -16,8 +16,12 @@ function Home() {
 
                 </li>
                 <li>
+                    <Link to="/memo">useMemo and useCallback </Link>
+                </li>
+                <li>
                     <Link to="/about">About</Link>
                 </li>
+
             </ul>
         </>
     )

@@ -7,7 +7,10 @@ function InputText(props: any) {
                 {name}
             </label>
             <br />
-            <input id={name} type={type} onChange={(e) => { console.log(e.target.value); setter(e.target.value) }} />
+            <input id={name} type={type} onChange={(e) => {
+                console.log(e.target.value);
+                setter(e.target.value);
+            }} />
         </>
     );
 }
