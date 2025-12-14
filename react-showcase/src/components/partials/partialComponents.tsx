@@ -22,7 +22,7 @@ export function Sidebar(props: { links: { to: string, label: string }[] }) {
 }
 export function Footer() {
     return (
-        <footer className="app-footer"> <a href="https://react.dev/learn/thinking-in-react" target="_blank" rel="noopener noreferrer"> nice to read</a></footer>
+        <footer className="app-footer"> <a href="https://react.dev/learn/thinking-in-react" target="_blank" rel="noopener noreferrer"> nice to read</a> , <a href="https://github.com/streamich/react-use">react-use</a> </footer>
     )
 
 }
